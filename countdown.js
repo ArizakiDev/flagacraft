@@ -1,7 +1,7 @@
 const countdown = document.getElementById('countdown');
 
 // Date de l'ouverture du serveur
-const serverOpeningDate = new Date('April 25, 2023 12:00:00').getTime();
+const serverOpeningDate = new Date('April 23, 2023 12:00:00').getTime();
 
 // Mise à jour du compte à rebours chaque seconde
 const x = setInterval(function() {
@@ -24,7 +24,7 @@ const x = setInterval(function() {
 	// Si le compte à rebours est terminé, afficher un message
 	if (distance < 0) {
 		clearInterval(x);
-		countdown.innerHTML = "OUVERT !";
+		countdown.innerHTML = "Date pas encore estimée.";
 	}
 
 }, 1000);
