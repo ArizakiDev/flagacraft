@@ -1,0 +1,134 @@
+body {
+	background-image: url(../../images/background/minecraft.gif);
+	background-size: cover;
+	background-position: center;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.7);
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(236, 8, 8, 0.7);
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.section {
+	padding: 20px;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(233, 233, 233, 0.7);
+}
+
+.section h2 {
+	margin-top: 0;
+}
+
+.section li {
+	margin-left: 20px;
+}
+
+.warning {
+	color: red;
+	font-weight: bold;
+}
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    }
+    
+    /* Ajout d'un texte de copyright */
+    .footer p {
+    margin: 0;
+    }
+    
+    /* Ajout d'un lien vers les conditions d'utilisation */
+    .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    }
+    
+    /* Effet de survol sur le lien */
+    .footer a:hover {
+    text-decoration: underline;
+    }
+    
+    /* Media queries pour un affichage responsive */
+    @media screen and (max-width: 600px) {
+    .row {
+    flex-direction: column;
+    }
+    
+    .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+    }
+    }
+
+    .container h1 {
+        color: white;
+      }
+    
+    /* Ajout d'un effet de survol sur les boutons */
+    .button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    }
+    
+    /* Ajout d'un effet de survol sur les icônes de médias sociaux */
+    .social:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center; /* Centrer les éléments horizontalement */
+        align-items: center;
+        background-color: #33333300;
+        color: white;
+        padding: 10px;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      
+      .navbar .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .navbar .nav-item {
+        margin-left: 20px;
+      }
+      
+      .navbar .nav-link {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .navbar .nav-link:hover {
+        background-color: #555;
+      }
+    
