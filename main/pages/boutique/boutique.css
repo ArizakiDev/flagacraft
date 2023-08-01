@@ -17,6 +17,14 @@ header {
     text-align: center;
 }
 
+.navbar .active {
+  text-decoration: none;
+  color: rgba(14, 17, 209, 0.836);
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 header h1 {
     margin: 0;
 }

@@ -57,6 +57,14 @@ body {
     margin: 0;
     }
     
+    .navbar .active {
+      text-decoration: none;
+      color: rgba(14, 17, 209, 0.836);
+      font-size: 25px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
     /* Ajout d'un lien vers les conditions d'utilisation */
     .footer a {
     color: #ffffff;
