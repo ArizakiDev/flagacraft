@@ -1,82 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="google-site-verification" content="3uIuD6jSXOlRFMsA5BMo9ww5LjXDBXy_-9KSy685NcE"/>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./boutique/boutique.css">
-  <title>Boutique Flagacraft</title>
-  <meta content="Boutique Flagacraft" property="og:title" />
-  <meta content="Boutique du serveur Flagacraft" property="og:description" />
-  <meta content="https://flagacraft.netlify.app" property="og:url" />
-  <meta content="https://imgur.com/8gzdRfE.png" property="og:image" />
-  <meta content="#33FCFF" data-react-helmet="true" name="theme-color" />
-	
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFDKY1T51Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flagacraft boutique</title>
+    <link rel="stylesheet" href="./boutique/boutique.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
-  gtag('config', 'G-CFDKY1T51Q');
-</script>
-
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NGW6CWJ');</script>
-<!-- End Google Tag Manager -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGW6CWJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
     <nav class="navbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Accueil</a>
+            <a class="nav-link" href="../index.html" style="font-family: 'Minecraft', sans-serif;">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./boutique.html">Boutique</a>
+            <a class="nav-link" href="./rules.html" style="font-family: 'Minecraft', sans-serif;">Règles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./rules.html">Règles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://discord.gg/RyRQJEjfRK">Discord</a>
+            <a class="nav-link" href="https://discord.gg/RyRQJEjfRK" style="font-family: 'Minecraft', sans-serif;">Discord</a>
           </li>
         </ul>
       </nav>
+    <main>
 
-	<div class="background">
-		<div class="overlay"></div>
-	</div>
 
-    <div class="typing-container">
-        <h1 class="typing"></h1>
-      </div>
+        <div class="items-container">
+            <div class="item" data-price="50">
+              <div class="item">
+                <img src="../images/logo/vip.png" alt="Article 1">
+                <h2>V.I.P</h2>
+                <a href="#" class="avantagesbtn" style="text-decoration: none;" onclick="toggleAvantages()">Afficher les avantages</a><br>
+                <span class="avantages hidden"> <br>
+                  <p>Liste des avantages :</p>
+                  <ul>
+                    <li>informations sur les mises à jour, 2 jours à l'avance.</li>
+                    <li>kit spécial (infos sur le discord).</li>
+                    <li>1 fois / semaine kit de minerais (16 lingots de flagadium / 2 lingots de flagastyle).</li>
+                    <li>un accès à un spawner dans le spawn.</li>
+                  </ul>
+                </span> <br>
+                <span class="price">1.50€</span> <br><br>
+                <a href="" class="Achats" style="text-decoration: none;" onmouseover="changeEmoji()" onmouseout="restoreText()">Acheter</a>
+              </div>
+            </div>
+          </div>
+          </main>
+          
+          
 
+    <script>
+      // Fonction pour changer le texte en émoji lors du survol
+    function changeEmoji() {
+        const button = document.querySelector(".Achats");
+        button.textContent = "❤️"; // Remplacez le texte par l'émoji de votre choix
+    }
+
+    // Fonction pour restaurer le texte initial lorsque le curseur quitte le lien
+    function restoreText() {
+        const button = document.querySelector(".Achats");
+        button.textContent = "Acheter";
+    }
+
+    function toggleAvantages() {
+  const avantages = document.querySelector(".avantages");
+  const lienAvantages = document.querySelector(".avantagesbtn");
+
+  // Si la liste des avantages est cachée, l'afficher et modifier le texte du lien
+  if (avantages.classList.contains("hidden")) {
+    avantages.classList.remove("hidden");
+    lienAvantages.textContent = "Masquer les avantages";
+  } else { // Sinon, la cacher et restaurer le texte du lien
+    avantages.classList.add("hidden");
+    lienAvantages.textContent = "Afficher les avantages";
+  }
+}
+
+    </script>
 </body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-
-<script>
-  var typed = new Typed('.typing', {
-    strings: ["Arrive prochainement", "Coming soon"],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true,
-    onComplete: function(self) {
-      var text = self.strings[0];
-      self.strings[0] = self.strings[1];
-      self.strings[1] = text;
-    }
-  });
-</script>
